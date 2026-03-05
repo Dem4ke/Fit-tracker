@@ -1,0 +1,67 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="NObZt32DlCua3fhVRQLL">
+    <mxGraphModel dx="1425" dy="828" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bw4BstcKqA3UyAh37Xnl-1" target="Bw4BstcKqA3UyAh37Xnl-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bw4BstcKqA3UyAh37Xnl-1" target="Bw4BstcKqA3UyAh37Xnl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bw4BstcKqA3UyAh37Xnl-1" target="Bw4BstcKqA3UyAh37Xnl-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-1" value="Система для слежения за здоровьем" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1111" y="427" width="269" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-2" value="Ведение статистики по приемам пищи" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="78" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-3" value="Ведение статистики&amp;nbsp;&lt;div&gt;по весу&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="271" y="78" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-5" value="Запись о каждом приеме пищи" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="683" y="189" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-6" value="Запись о выпитой воде" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="837" y="189" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-7" value="Задание вариантов минимальных и максимальных лимитов для каждого дня и в общем" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="837" y="266" width="120" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-9" value="Записи о взвешиваниях" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="189" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-10" value="График изменения веса" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371" y="189" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-11" value="Возможность задания комментариев к записям" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="266" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-12" value="Задание стандартных приемов пищи" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="683" y="266" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-13" value="Возможность комментировать приемы пищи" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="683" y="343" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-14" value="Возможность изменить прием пищи под конкретную ситуацию без изменения шаблона" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="699" y="417" width="242" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-15" value="Ведение базы данных продуктов" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="750" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-17" value="Возможность загружать продукты" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="658" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-18" value="Возможность сканировать продукты" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="837" y="658" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bw4BstcKqA3UyAh37Xnl-19" value="Возможность редактировать продукты" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="683" y="577" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
