@@ -15,109 +15,48 @@ Window {
     property color backColor: "#2B2B30"
     property int margin: 10
 
-    // Основной компоновщик элементов
-    RowLayout {
-        id: mainPage
-        anchors.fill: parent
-
-        // Заглушка для работы с кнопками переключения режимов
-        ColumnLayout {
-            id: modeLayout
-            Layout.fillHeight: true
-
-            Rectangle {
-                width: 50
-                height: 50
-            }
-            Rectangle {
-                width: 50
-                height: 50
-            }
-            Rectangle {
-                width: 50
-                height: 50
-            }
-            Rectangle {
-                width: 50
-                height: 50
-            }
-            Item {
-                Layout.fillHeight: true
-            }
+    ListModel {
+        id: nameModel
+        ListElement { name: "Alice"; team: "Crypto" }
+        ListElement { name: "Bob"; team: "Crypto" }
+        ListElement { name: "Jane"; team: "QA" }
+        ListElement { name: "Victor"; team: "QA" }
+        ListElement { name: "Wendy"; team: "Graphics" }
+    }
+    Component {
+        id: nameDelegate
+        Text {
+            required property string name
+            text: name;
+            font.pixelSize: 24
+            anchors.left: parent.left
+            anchors.leftMargin: 2
         }
+    }
 
-        // Страница с главной работой приложения
-        Page {
-            id: page
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-
-            // Days buttons
-            header: RowLayout {
-                id: daysLayout
-                anchors.right: parent.right
-
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-                Rectangle {
-                    width: 50
-                    height: 50
-                    radius: 25
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-                }
-
-                // Заглушка для календаря
-                Rectangle {
-                    width: 50
-                    height: 50
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHRight
+    ListView {
+        anchors.fill: parent
+        model: nameModel
+        delegate: nameDelegate
+        focus: true
+        highlight: Rectangle {
+            color: "lightblue"
+            width: parent.width
+        }
+        section {
+            property: "team"
+            criteria: ViewSection.FullString
+            delegate: Rectangle {
+                color: "#b0dfb0"
+                width: parent.width
+                height: childrenRect.height + 4
+                Text {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    font.pixelSize: 16
+                    font.bold: true
+                    text: section
                 }
             }
-
-            // Main tables of meals
-            TableView {
-                id: tableView
-                anchors.fill: parent
-
-                model: tableModel
-                delegate: TableDelegate {}
-            }
-
-            //fotter:
         }
     }
 }

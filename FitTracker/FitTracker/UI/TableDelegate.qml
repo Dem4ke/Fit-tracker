@@ -9,8 +9,8 @@ Rectangle {
     required property bool selected
     required property bool current
 
-    implicitWidth: 200
-    implicitHeight: 200
+    implicitWidth: 150
+    implicitHeight: 40
 
     border.width: 1
     border.color: "#dddddd"

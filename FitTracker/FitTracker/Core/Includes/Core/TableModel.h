@@ -3,13 +3,6 @@
 #include <QAbstractTableModel>
 
 namespace Core {
-    // Roles that model supports
-    enum class Roles : int {
-        //role1 = Qt::UserRole + 1,
-        //role2,
-        //role3,
-    };
-
     // Interface of the column of the database table
     class IColumn {
     public:
@@ -51,9 +44,11 @@ namespace Core {
 
         void addRow(const QVariantMap& rowData);
         void addColumn(const std::shared_ptr<IColumn> column);
+        void addRole(const QString& role);
 
     private:
         QHash<int, QVariantMap> data_;                  // Data from database key is a row index, value is a row data
         QVector<std::shared_ptr<IColumn>> columns_;     // Columns of data table
+        QVector<QString> roles_;                        // Roles that used as filters (they added after column roles)
     };
 } // namespace Core

@@ -69,6 +69,12 @@ namespace Core {
             ++role;
         }
 
+        // Add new role filters
+        for (auto& roleName : roles_) {
+            roles.insert(role, roleName.toUtf8());
+            ++role;
+        }
+
         return roles;
     }
 
@@ -84,5 +90,10 @@ namespace Core {
     // Add new column
     void TableModel::addColumn(const std::shared_ptr<IColumn> column) {
         columns_.push_back(column);
+    }
+
+    // Add new filter role
+    void TableModel::addRole(const QString& role) {
+        roles_.push_back(role);
     }
 } // namespace Core

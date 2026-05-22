@@ -1,9 +1,11 @@
 set(LIBRARY_PUBLIC_HEADERS
     Includes/Core/TableModel.h
+    Includes/Core/ProjectDirector.h
 )
 
 set(LIBRARY_SOURCE_FILES
     SourceFiles/TableModel.cpp
+    SourceFiles/ProjectDirector.cpp
 )
 
 source_group(
@@ -31,5 +33,6 @@ target_include_directories(FitTrackerCoreLib
 
 target_link_libraries(FitTrackerCoreLib
     PRIVATE
+        Qt6::Quick
         Qt6::Core
 )
