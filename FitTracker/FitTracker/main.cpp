@@ -1,7 +1,8 @@
 #include <QGuiApplication>
-#include <Core/ProjectDirector.h>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
 
-#include "Core/ProjectDirector.h"
+#include "UI/MainPageViewModel.h"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
@@ -14,9 +15,13 @@ int main(int argc, char *argv[]) {
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
 
-    engine.loadFromModule("FitTracker", "Main");
+    UI::MainPageViewModel mainPage;
 
-    Core::ProjectDirector projectDirector(engine);
+    engine.rootContext()->setContextProperty(
+        "mainPage",
+        &mainPage);
+
+    engine.loadFromModule("FitTracker", "Main");
 
     return app.exec();
 }

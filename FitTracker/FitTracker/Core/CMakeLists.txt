@@ -1,11 +1,29 @@
 set(LIBRARY_PUBLIC_HEADERS
-    Includes/Core/TableModel.h
-    Includes/Core/ProjectDirector.h
+    # Models
+    Includes/Core/Models/DayModel.h
+    Includes/Core/Models/MealModel.h
+    Includes/Core/Models/FoodModel.h
+    Includes/Core/Models/MealListModel.h
+    Includes/Core/Models/FoodListModel.h
+
+    # Repositories
+    Includes/Core/Repositories/DayRepository.h
+    Includes/Core/Repositories/MealRepository.h
+    Includes/Core/Repositories/FoodRepository.h
 )
 
 set(LIBRARY_SOURCE_FILES
-    SourceFiles/TableModel.cpp
-    SourceFiles/ProjectDirector.cpp
+    # Models
+    SourceFiles/Models/DayModel.cpp
+    SourceFiles/Models/MealModel.cpp
+    SourceFiles/Models/FoodModel.cpp
+    SourceFiles/Models/MealListModel.cpp
+    SourceFiles/Models/FoodListModel.cpp
+
+    # Repositories
+    SourceFiles/Repositories/DayRepository.cpp
+    SourceFiles/Repositories/MealRepository.cpp
+    SourceFiles/Repositories/FoodRepository.cpp
 )
 
 source_group(
@@ -35,4 +53,5 @@ target_link_libraries(FitTrackerCoreLib
     PRIVATE
         Qt6::Quick
         Qt6::Core
+        Fit::Domain
 )

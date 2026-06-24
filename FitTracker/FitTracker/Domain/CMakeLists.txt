@@ -1,9 +1,27 @@
 set(LIBRARY_PUBLIC_HEADERS
-    Includes/Domain/Project.h
+    # Interfaces
+    Includes/Domain/IFood.h
+
+    # Real objects
+    Includes/Domain/Day.h
+    Includes/Domain/BodyMeasurements.h
+    Includes/Domain/SummaryNutrients.h
+    Includes/Domain/Meal.h
+    Includes/Domain/SimpleFood.h
+    Includes/Domain/RecipeFood.h
+    Includes/Domain/FoodAttributes.h
+    Includes/Domain/RecipeAttributes.h
 )
 
 set(LIBRARY_SOURCE_FILES
-    SourceFiles/Project.cpp
+    SourceFiles/Day.cpp
+    SourceFiles/BodyMeasurements.cpp
+    SourceFiles/SummaryNutrients.cpp
+    SourceFiles/Meal.cpp
+    SourceFiles/SimpleFood.cpp
+    SourceFiles/RecipeFood.cpp
+    SourceFiles/FoodAttributes.cpp
+    SourceFiles/RecipeAttributes.cpp
 )
 
 source_group(
@@ -31,5 +49,5 @@ target_include_directories(FitTrackerDomainLib
 
 target_link_libraries(FitTrackerDomainLib
     PRIVATE
-
+        Qt6::Core
 )

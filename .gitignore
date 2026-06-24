@@ -17,5 +17,5 @@ CMakeLists.txt.user*
 */.idea
 
 #Diagrams of the project
-*/Diagrams/*.bkp
-*/Diagrams/*.btmp
+*.bkp
+*.btmp

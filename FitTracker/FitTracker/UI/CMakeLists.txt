@@ -1,10 +1,10 @@
 set(LIBRARY_PUBLIC_HEADERS
-    #Includes/Repository/DayRepository.h
+    # View Models
+    Includes/UI/MainPageViewModel.h
 )
 
 set(LIBRARY_SOURCE_FILES
-    # Repositories and data base classes
-    #SourceFiles/Repository/DayRepository.cpp
+    SourceFiles/MainPageViewModel.cpp
 )
 
 source_group(
@@ -14,14 +14,14 @@ source_group(
     ${LIBRARY_PUBLIC_HEADERS}
 )
 
-add_library(FitTrackerServiceLib STATIC
+add_library(FitTrackerUiLib STATIC
     ${LIBRARY_SOURCE_FILES}
     ${LIBRARY_PUBLIC_HEADERS}
 )
 
-add_library(Fit::Service ALIAS FitTrackerServiceLib)
+add_library(Fit::UI ALIAS FitTrackerUiLib)
 
-target_include_directories(FitTrackerServiceLib
+target_include_directories(FitTrackerUiLib
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Includes>
     $<INSTALL_INTERFACE:include>
@@ -30,7 +30,8 @@ target_include_directories(FitTrackerServiceLib
     ${CMAKE_CURRENT_SOURCE_DIR}/SourceFiles
 )
 
-target_link_libraries(FitTrackerServiceLib
+target_link_libraries(FitTrackerUiLib
     PRIVATE
-
+        Qt6::Core
+        Fit::Core
 )
