@@ -20,8 +20,8 @@ namespace Domain {
         quint64 getId() const;
         const QDate& getDate() const;
 
-        void setWater(float value);
-        float getWater() const;
+        void setWater(int value);
+        int getWater() const;
 
         void setWeight(float value);
         float getWeight() const;
@@ -43,7 +43,7 @@ namespace Domain {
 
     private:
         quint64 id_ = 0;                        // Unique identification number
-        float water_ = 0.0f;                    // Value of the drunk water in ml
+        int water_ = 0.0f;                      // Value of the drunk water in ml
         float weight_ = 0.0f;                   // Value of the measured weight in kg
         QDate date_;                            // Date of the day
         QString note_;                          // User notes of the day

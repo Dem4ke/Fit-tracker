@@ -33,5 +33,7 @@ target_include_directories(FitTrackerUiLib
 target_link_libraries(FitTrackerUiLib
     PRIVATE
         Qt6::Core
+
+    PUBLIC
         Fit::Core
 )

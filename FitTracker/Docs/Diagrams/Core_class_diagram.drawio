@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
   <diagram name="Core components" id="MwxTrahBnXoBxd9RCBPx">
-    <mxGraphModel dx="1542" dy="2613" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="110000" pageHeight="85000" math="0" shadow="0">
+    <mxGraphModel dx="225" dy="2028" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="110000" pageHeight="85000" math="0" shadow="0">
       <root>
         <mxCell id="Zm6AIv3RCxuBsyo3ZIVS-0" />
         <mxCell id="Zm6AIv3RCxuBsyo3ZIVS-1" parent="Zm6AIv3RCxuBsyo3ZIVS-0" />
@@ -168,7 +168,10 @@
         <mxCell id="Z9W-GxhZ8IzansMeAXQO-74" parent="Z9W-GxhZ8IzansMeAXQO-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- meals: vector&amp;lt;MealViewModel&amp;gt;" vertex="1">
           <mxGeometry height="26" width="204" y="162" as="geometry" />
         </mxCell>
-        <mxCell id="Z9W-GxhZ8IzansMeAXQO-82" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="Z9W-GxhZ8IzansMeAXQO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;endSize=16;" target="Z9W-GxhZ8IzansMeAXQO-44">
+        <mxCell id="Z9W-GxhZ8IzansMeAXQO-82" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="Z9W-GxhZ8IzansMeAXQO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;endSize=6;dashed=1;" target="Z9W-GxhZ8IzansMeAXQO-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-4" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="Z9W-GxhZ8IzansMeAXQO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=classic;endFill=1;" target="f4md90w9VsroIw8WaKDC-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Z9W-GxhZ8IzansMeAXQO-77" parent="Zm6AIv3RCxuBsyo3ZIVS-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=41;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Domain::IFood&lt;/i&gt;&lt;/span&gt;" vertex="1">
@@ -178,6 +181,9 @@
           <mxGeometry height="35" width="203" y="41" as="geometry" />
         </mxCell>
         <mxCell id="Z9W-GxhZ8IzansMeAXQO-81" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="Z9W-GxhZ8IzansMeAXQO-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Z9W-GxhZ8IzansMeAXQO-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-3" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="Z9W-GxhZ8IzansMeAXQO-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Z9W-GxhZ8IzansMeAXQO-59">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Z9W-GxhZ8IzansMeAXQO-79" parent="Zm6AIv3RCxuBsyo3ZIVS-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Domain::Meal" vertex="1">
@@ -193,6 +199,38 @@
           <mxGeometry height="76" width="204" x="3461" y="27" as="geometry" />
         </mxCell>
         <mxCell id="Z9W-GxhZ8IzansMeAXQO-84" parent="Z9W-GxhZ8IzansMeAXQO-83" style="html=1;whiteSpace=wrap;" value="Class that describes a model of the one day" vertex="1">
+          <mxGeometry height="50" width="204" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-2" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="f4md90w9VsroIw8WaKDC-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;endSize=16;" target="Z9W-GxhZ8IzansMeAXQO-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-0" parent="Zm6AIv3RCxuBsyo3ZIVS-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FoodModel" vertex="1">
+          <mxGeometry height="76" width="204" x="2360" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-1" parent="f4md90w9VsroIw8WaKDC-0" style="html=1;whiteSpace=wrap;" value="Class that describes a model of the one food" vertex="1">
+          <mxGeometry height="50" width="204" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-14" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="f4md90w9VsroIw8WaKDC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;" target="f4md90w9VsroIw8WaKDC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-15" edge="1" parent="Zm6AIv3RCxuBsyo3ZIVS-1" source="f4md90w9VsroIw8WaKDC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;endSize=16;" target="3n2n1cUuqjJ89L6w3cSG-0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3845" y="-27" />
+              <mxPoint x="3563" y="-27" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-5" parent="Zm6AIv3RCxuBsyo3ZIVS-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="WeekListModel" vertex="1">
+          <mxGeometry height="76" width="204" x="3743" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-6" parent="f4md90w9VsroIw8WaKDC-5" style="html=1;whiteSpace=wrap;" value="Class that describes a model of the list (vector) of the days&lt;div&gt;contains only a QDate items&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="204" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-12" parent="Zm6AIv3RCxuBsyo3ZIVS-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="QAbstractListModel" vertex="1">
+          <mxGeometry height="76" width="204" x="3743" y="-146" as="geometry" />
+        </mxCell>
+        <mxCell id="f4md90w9VsroIw8WaKDC-13" parent="f4md90w9VsroIw8WaKDC-12" style="html=1;whiteSpace=wrap;" value="Qt framework list model class" vertex="1">
           <mxGeometry height="50" width="204" y="26" as="geometry" />
         </mxCell>
       </root>

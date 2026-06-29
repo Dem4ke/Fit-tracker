@@ -1,8 +1,5 @@
 #include <QGuiApplication>
-#include <QQmlApplicationEngine>
-#include <QQmlContext>
-
-#include "UI/MainPageViewModel.h"
+#include "ApplicationMediator.h"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
@@ -15,13 +12,7 @@ int main(int argc, char *argv[]) {
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
 
-    UI::MainPageViewModel mainPage;
-
-    engine.rootContext()->setContextProperty(
-        "mainPage",
-        &mainPage);
-
-    engine.loadFromModule("FitTracker", "Main");
+    FitTracker::ApplicationMediator appMediator(nullptr, engine);
 
     return app.exec();
 }

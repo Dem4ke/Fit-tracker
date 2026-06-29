@@ -1,4 +1,5 @@
 #include "Domain/Day.h"
+#include "Domain/Meal.h"
 
 namespace Domain {
     Day::Day(quint64 id, QDate date)
@@ -23,11 +24,11 @@ namespace Domain {
         return date_;
     }
 
-    void Day::setWater(float value) {
+    void Day::setWater(int value) {
         water_ = value;
     }
 
-    float Day::getWater() const {
+    int Day::getWater() const {
         return water_;
     }
 

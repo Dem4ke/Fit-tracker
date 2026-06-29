@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Core/Models/MealListModel.h"
+
 #include <QObject>
 #include <QDate>
 
@@ -8,8 +10,6 @@ namespace Domain {
 } // namespace Domain
 
 namespace Core {
-    class MealListModel;
-
     // Model class that describes a day for a QML
     class DayModel : public QObject {
         Q_OBJECT
@@ -18,6 +18,11 @@ namespace Core {
             QDate date
             READ getDate
             NOTIFY dateChanged)
+
+        Q_PROPERTY(
+            float weight
+            READ getWeight
+            NOTIFY weightChanged)
 
         Q_PROPERTY(
             MealListModel* meals
@@ -29,15 +34,18 @@ namespace Core {
         ~DayModel() override = default;
 
         void setDay(const Domain::Day& day);
-        const QDate& gatDate() const;
 
+        const QDate& getDate() const;
+        float getWeight() const;
         MealListModel* getMeals() const;
 
     signals:
         void dateChanged();
+        void weightChanged();
 
     private:
         QDate date_;                            // Displayed day date
+        float weight_ = 0.0f;                   // Measured weight
         MealListModel* meals_ = nullptr;        // Model of the list of meals
     };
 } // namespace Core

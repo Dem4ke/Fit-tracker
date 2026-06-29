@@ -1,6 +1,7 @@
 #pragma once
 
-#include "FoodListModel.h"
+#include "Core/Models/FoodListModel.h"
+
 #include <QObject>
 
 namespace Domain {

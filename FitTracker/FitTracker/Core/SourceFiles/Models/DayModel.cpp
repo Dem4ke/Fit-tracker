@@ -1,6 +1,4 @@
 #include "Core/Models/DayModel.h"
-#include "Core/Models/MealListModel.h"
-
 #include "Domain/Day.h"
 
 namespace Core {
@@ -12,10 +10,15 @@ namespace Core {
         date_ = day.getDate();
 
         emit dateChanged();
+        emit weightChanged();
     }
 
-    const QDate& DayModel::gatDate() const {
+    const QDate& DayModel::getDate() const {
         return date_;
+    }
+
+    float DayModel::getWeight() const {
+        return weight_;
     }
 
     MealListModel* DayModel::getMeals() const {

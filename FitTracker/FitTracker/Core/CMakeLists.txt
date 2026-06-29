@@ -5,6 +5,7 @@ set(LIBRARY_PUBLIC_HEADERS
     Includes/Core/Models/FoodModel.h
     Includes/Core/Models/MealListModel.h
     Includes/Core/Models/FoodListModel.h
+    Includes/Core/Models/WeekListModel.h
 
     # Repositories
     Includes/Core/Repositories/DayRepository.h
@@ -19,6 +20,7 @@ set(LIBRARY_SOURCE_FILES
     SourceFiles/Models/FoodModel.cpp
     SourceFiles/Models/MealListModel.cpp
     SourceFiles/Models/FoodListModel.cpp
+    SourceFiles/Models/WeekListModel.cpp
 
     # Repositories
     SourceFiles/Repositories/DayRepository.cpp

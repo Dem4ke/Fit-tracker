@@ -14,16 +14,25 @@ qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(${PROJECT_NAME}
     FitTracker/main.cpp
+    FitTracker/ApplicationMediator.h
+    FitTracker/ApplicationMediator.cpp
 )
 
 qt_add_qml_module(${PROJECT_NAME}
         URI ${PROJECT_NAME}
         QML_FILES
         FitTracker/UI/QML/Main.qml
+        FitTracker/UI/QML/MainPage.qml
+        FitTracker/UI/QML/WeightPage.qml
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     WIN32_EXECUTABLE TRUE
+)
+
+# Hide console with Release version
+set_target_properties(${PROJECT_NAME} PROPERTIES
+        WIN32_EXECUTABLE $<NOT:$<CONFIG:Debug>>
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -31,6 +40,7 @@ target_link_libraries(${PROJECT_NAME}
         Qt6::Quick
         Qt6::Qml
         Fit::UI
+        Fit::Domain
 )
 
 include(GNUInstallDirs)
@@ -41,8 +51,8 @@ install(TARGETS ${PROJECT_NAME}
 )
 
 #add_subdirectory(Tests)
-add_subdirectory(FitTracker/Domain)
 add_subdirectory(FitTracker/Service)
+add_subdirectory(FitTracker/Domain)
 add_subdirectory(FitTracker/Core)
 add_subdirectory(FitTracker/UI)
 
